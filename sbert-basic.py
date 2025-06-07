@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
-with open('data/sentences.txt', 'r', encoding='utf-8') as file:
+with open('sentences.txt', 'r', encoding='utf-8') as file:
     sentences = file.readlines()
 
 # 2. Calculate embeddings by calling model.encode()
